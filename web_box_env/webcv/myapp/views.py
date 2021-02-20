@@ -14,7 +14,7 @@ def index(request):
     act = [
         'Petong',
         'Pow',
-        'LOVE'
+        'Tar'
 
     ]
 
