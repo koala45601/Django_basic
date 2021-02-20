@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime import datetime, time
+
 
 def hello(request, id):
     return HttpResponse('HELLO WORLD ID = '+id )
@@ -25,6 +27,9 @@ def index(request):
         'email2' : email,
         'act1': act
     })
+
+
+
 
 def re_path(request):
     return HttpResponse('TEST Aricht')
