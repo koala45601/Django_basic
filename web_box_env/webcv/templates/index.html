@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>helll world html</h1>
+    <h2>{{id2}}</h2>
+    <h2>{{name2}}</h2>
+    <h2>{{email2}}</h2>
+    {% if id2 == '001' and name2 == 'somchai' %}
+    <h2>Access OK</h2>
+    {% else %}
+    <h2>Access Error please input username and pasword agine</h2>
+    {% endif %}
+
+
+    {% for x in act1 %}
+    <h2>{{x}}</h2>
+    {% endfor %}
+
+    <a href="{% url 'myapp:index' %}">Goto index Page</a><br>
+    <a href="{% url 'myapp:hello1' id=13 %}">Goto hello Page</a><br>
+    <a href="{% url 'myapp:repath1' %}">Goto repath1 Page</a><br>
+    <a href="{% url 'myapp:repath2' year=2021 %}">Goto repath2 Page</a><br>
+    <a href="{% url 'myapp:repath3' ID_2=2022 slug='petong-miss-you' %}">Goto repath3 Page</a><br>
+
+</body>
+</html>
