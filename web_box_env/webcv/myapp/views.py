@@ -2,6 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime, time
 
+'''def [hello_hompage] = มีไว้สำหรับ เป็นต้องส่งค่า request ไปยัง urls.py หรือก็คือ  hello_hompage คือชื่อตัวเว็บที่ส่งค่าไปเช่น ip web คือ 127.0.0.1:8000 
+แล้วถ้าอยากได้ข้อความหรือค่าที่ มีอยุ่ใน def ให้ใช้ 127.0.0.1:8000/hello_homepage แต่ต้องไปเพิ่มใน urls.py ด้วย 
+
+การส่งค่าจะใช้ คำสั่ง return HttpResponse เพื่อส่งค่า
+'''
+def hello_homepage(request):
+    return HttpResponse('<h1>HELLO Petong<h1>')
 
 def hello(request, id):
     return HttpResponse('HELLO WORLD ID = '+id )
