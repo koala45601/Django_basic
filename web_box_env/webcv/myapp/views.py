@@ -6,11 +6,13 @@ from datetime import datetime, time
 แล้วถ้าอยากได้ข้อความหรือค่าที่ มีอยุ่ใน def ให้ใช้ 127.0.0.1:8000/hello_homepage แต่ต้องไปเพิ่มใน urls.py ด้วย 
 
 การส่งค่าจะใช้ คำสั่ง return HttpResponse เพื่อส่งค่า
+HttpResponse=g-เขียนเอง
+render ช ดึงข้อมุลมาจากทีอื่นเช่น Templete
 '''
 
 time1=datetime(2021, 2, 21) 
 def hello_homepage(request):
-    return HttpResponse('<h1>HELLO Petong<h1>'+' '+str(time1))
+    return render(request, 'index.html')
 
 def hello(request, id):
     return HttpResponse('HELLO WORLD ID = '+id )

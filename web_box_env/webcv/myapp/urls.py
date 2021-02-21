@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     #localhost:8000/
-    path('', views.index,name='index_1'),
+    path('', views.hello_homepage,name='index_1'),
     #localhost:8000/hello/(ใส่เลขในตัวแปร id)
     path('hello/<str:id>', views.hello,name='hello1'),
     #localhost:8000/re_path/
@@ -14,6 +14,6 @@ urlpatterns = [
     #localhost:8000/re_path/(ใส่เลข4 ตัว ตัวแปร year และใส่่สลัก(-)เช่น Petong-miss)
     re_path(r're_path_3/(?P<ID_2>[0-9]{4})/(?P<slug>[\w-]+)/$', views.re_path_3,name='repath3'),
     #localhost:8000/hello_hompage
-    path('hello_homepage/', views.hello_homepage,name= 'home1')
+    #path('hello_homepage/', views.hello_homepage,name= 'home1')
 
 ]
