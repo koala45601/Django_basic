@@ -14,6 +14,6 @@ urlpatterns = [
     #localhost:8000/re_path/(ใส่เลข4 ตัว ตัวแปร year และใส่่สลัก(-)เช่น Petong-miss)
     re_path(r're_path_3/(?P<ID_2>[0-9]{4})/(?P<slug>[\w-]+)/$', views.re_path_3,name='repath3'),
     #localhost:8000/hello_hompage
-    path('hello_homepage/', views.hello_homepage)
+    path('hello_homepage/', views.hello_homepage,name= 'home1')
 
 ]

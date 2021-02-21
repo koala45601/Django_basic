@@ -7,8 +7,11 @@ from datetime import datetime, time
 
 การส่งค่าจะใช้ คำสั่ง return HttpResponse เพื่อส่งค่า
 '''
+time1=datetime(2021, 2, 2)
+print(time1)
+
 def hello_homepage(request):
-    return HttpResponse('<h1>HELLO Petong<h1>')
+    return HttpResponse('<h1>HELLO Petong<h1>'+str(time1))
 
 def hello(request, id):
     return HttpResponse('HELLO WORLD ID = '+id )

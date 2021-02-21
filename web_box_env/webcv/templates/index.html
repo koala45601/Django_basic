@@ -13,9 +13,9 @@
     <h2>{{name2}}</h2>
     <h2>{{email2}}</h2>
     {% if id2 == '001' and name2 == 'somchai' %}
-    <h2>Access OK</h2>
+    <h2>Access OK</h2><br>
     {% else %}
-    <h2>Access Error please input username and pasword agine</h2>
+    <h2>Access Error please input username and pasword agin</h2><br>
     {% endif %}
 
 
@@ -28,6 +28,8 @@
     <a href="{% url 'myapp:repath1' %}">Goto repath1 Page</a><br>
     <a href="{% url 'myapp:repath2' year=2021 %}">Goto repath2 Page</a><br>
     <a href="{% url 'myapp:repath3' ID_2=2022 slug='petong-miss-you' %}">Goto repath3 Page</a><br>
+    <a href="{% url 'myapp:home1' %}">Goto Home Page TEST</a> <br>
+
 
 </body>
 </html>
