@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Hello Petong</h1>
-    <h1>helll world html</h1>
-    <h2>{{id2}}</h2>
-    <h2>{{name2}}</h2>
-    <h2>{{email2}}</h2>
-    {% if id2 == '001' and name2 == 'somchai' %}
-    <h2>Access OK</h2><br>
-    {% else %}
-    <h2>Access Error please input username and pasword agin</h2><br>
-    {% endif %}
 
-
-    {% for x in act1 %}
-    <h2>{{x}}</h2>
-    {% endfor %}
-
-    <a href="{% url 'myapp:index_1' %}">Goto index Page</a><br>
-    <a href="{% url 'myapp:hello1' id=13 %}">Goto hello Page</a><br>
-    <a href="{% url 'myapp:repath1' %}">Goto repath1 Page</a><br>
-    <a href="{% url 'myapp:repath2' year=2021 %}">Goto repath2 Page</a><br>
-    <a href="{% url 'myapp:repath3' ID_2=2022 slug='petong-miss-you' %}">Goto repath3 Page</a><br>
-    <a href="{% url 'myapp:home1' %}">Goto Home Page TEST</a> <br>
-
+<div class="jumbotron text-center">
+  <h1>Petong Page Beginner</h1>
+  <p>I create to 21/2/2021</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
